@@ -1,0 +1,1 @@
+﻿Collect reusable test data builders when the same setup is duplicated across multiple tests.

@@ -1,0 +1,48 @@
+[
+  {
+    "type": "service",
+    "name": "myres-trip-svc",
+    "source": "src/TripService",
+    "dockerfile": "src/TripService/MyRes.TripService.Api",
+    "patch": "trip/deployment-patch.yaml"
+  },
+  {
+    "type": "service",
+    "name": "myres-payment-svc",
+    "source": "src/PaymentService",
+    "dockerfile": "src/PaymentService/MyRes.PaymentService.Api",
+    "patch": "payment/deployment-patch.yaml"
+  },
+  {
+    "type": "service",
+    "name": "myres-provider-svc",
+    "source": "src/ProviderService",
+    "dockerfile": "src/ProviderService/MyRes.ProviderService.Api",
+    "patch": "provider/deployment-patch.yaml"
+  },
+  {
+    "type": "service",
+    "name": "myres-notification-svc",
+    "source": "src/NotificationService",
+    "dockerfile": "src/NotificationService/MyRes.NotificationService.Api",
+    "patch": "notification/deployment-patch.yaml"
+  },
+  {
+    "type": "service",
+    "name": "myres-gateway-svc",
+    "source": "src/GatewayService",
+    "dockerfile": "src/GatewayService/MyRes.GatewayService.Api",
+    "patch": "gateway/deployment-patch.yaml"
+  },
+  {
+    "type": "frontend",
+    "name": "myres-frontend-svc",
+    "source": "frontend/web-app",
+    "dockerfile": "frontend/web-app",
+    "patch": "frontend/deployment-patch.yaml"
+  },
+  {
+    "type": "shared",
+    "source": "src/BuildingBlocks"
+  }
+]

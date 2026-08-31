@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e389352c-03af-4c18-bcec-4272f998c0e8</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Carter" Version="10.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.4" />
+    <PackageReference Include="Microsoft.OpenApi" Version="2.7.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+	<PackageReference Include="Scalar.AspNetCore" Version="2.14.6" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.5">
+		<PrivateAssets>all</PrivateAssets>
+		<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BuildingBlocks\MyRes.BuildingBlocks\MyRes.BuildingBlocks.csproj" />
+    <ProjectReference Include="..\MyRes.ProviderService.Application\MyRes.ProviderService.Application.csproj" />
+    <ProjectReference Include="..\MyRes.ProviderService.Infrastructure\MyRes.ProviderService.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

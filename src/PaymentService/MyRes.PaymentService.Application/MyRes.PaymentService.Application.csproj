@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+    <Folder Include="Payments\IntegrationEvents\Shared\" />
+    <Folder Include="Payments\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="MediatR" Version="14.1.0" />
+	  <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BuildingBlocks\MyRes.BuildingBlocks\MyRes.BuildingBlocks.csproj" />
+    <ProjectReference Include="..\MyRes.PaymentService.Domain\MyRes.PaymentService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+@MyRes.GatewayService.Api_HostAddress = http://localhost:5053
+
+GET {{MyRes.GatewayService.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

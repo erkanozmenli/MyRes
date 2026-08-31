@@ -1,0 +1,53 @@
+name: Weekly Integration & Contract Tests
+
+on:
+  schedule:
+    - cron: '0 3 * * 1' # Every Monday 03:00 UTC
+
+  workflow_dispatch:
+
+jobs:
+  integration-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # -----------------------------
+      # Checkout
+      # -----------------------------
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # -----------------------------
+      # Setup .NET
+      # -----------------------------
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      # -----------------------------
+      # Restore
+      # -----------------------------
+      - name: Restore
+        run: dotnet restore
+
+      # -----------------------------
+      # API Integration Tests
+      # -----------------------------
+      - name: Run API Integration Tests
+        run: >
+          dotnet test
+          tests/TripService/Api/MyRes.TripService.Api.IntegrationTests/MyRes.TripService.Api.IntegrationTests.csproj
+          --configuration Release
+          --no-restore
+          --logger "console;verbosity=detailed"          
+
+      # -----------------------------
+      # Infrastructure Contract Tests
+      # -----------------------------
+      - name: Run Infrastructure Contract Tests
+        run: >
+          dotnet test
+          tests/TripService/Infrastructure/MyRes.TripService.Infrastructure.ContractTests/MyRes.TripService.Infrastructure.ContractTests.csproj
+          --configuration Release
+          --no-restore

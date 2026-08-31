@@ -1,0 +1,35 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.1.0">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>f022ae42-e706-4398-a9e0-8ea3df020add</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="13.2.3" />
+    <PackageReference Include="Aspire.Hosting.RabbitMQ" Version="13.2.3" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="13.2.3" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="13.2.3" />
+	<PackageReference Include="Aspire.Hosting.JavaScript" Version="13.2.3" />
+	<PackageReference Include="Keycloak.AuthServices.Aspire.Hosting" Version="0.3.0" />
+	<PackageReference Include="MessagePack" Version="2.5.302" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\GatewayService\MyRes.GatewayService.Api\MyRes.GatewayService.Api.csproj" />
+    <ProjectReference Include="..\src\NotificationService\MyRes.NotificationService.Api\MyRes.NotificationService.Api.csproj" />
+    <ProjectReference Include="..\src\PaymentService\MyRes.PaymentService.Api\MyRes.PaymentService.Api.csproj" />
+    <ProjectReference Include="..\src\ProviderService\MyRes.ProviderService.Api\MyRes.ProviderService.Api.csproj" />
+    <ProjectReference Include="..\src\TripService\MyRes.TripService.Api\MyRes.TripService.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="datamount\otel\config.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

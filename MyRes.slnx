@@ -1,0 +1,84 @@
+<Solution>
+  <Folder Name="/docs/">
+    <File Path="docs/README.md" />
+    <File Path="docs/README.txt" />
+  </Folder>
+  <Folder Name="/docs/adr/">
+    <File Path="docs/adr/0001-architecture-principles.md" />
+    <File Path="docs/adr/0002-exception-classification.md" />
+    <File Path="docs/adr/0003-validation-strategy.md" />
+    <File Path="docs/adr/0004-error-response-contract.md" />
+    <File Path="docs/adr/0005-domain-vs-application-rules.md" />
+    <File Path="docs/adr/0006-persistence-and-repositories.md" />
+    <File Path="docs/adr/0007-api-versioning.md" />
+    <File Path="docs/adr/README.md" />
+  </Folder>
+  <Folder Name="/docs/images/">
+    <File Path="docs/images/aspire-demo-thumbnail.png" />
+    <File Path="docs/images/checkout-business-workflow.svg" />
+    <File Path="docs/images/deployment-demo-thumbnail.png" />
+    <File Path="docs/images/grafana-thumbnail.png" />
+    <File Path="docs/images/myres-architecture-overview.svg" />
+    <File Path="docs/images/myres-travel-platform-architecture.svg" />
+    <File Path="docs/images/openapi-demo-thumbnail.png" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/MyRes.BuildingBlocks/MyRes.BuildingBlocks.csproj" />
+  </Folder>
+  <Folder Name="/src/GatewayService/">
+    <Project Path="src/GatewayService/MyRes.GatewayService.Api/MyRes.GatewayService.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/NotificationService/">
+    <Project Path="src/NotificationService/MyRes.NotificationService.Api/MyRes.NotificationService.Api.csproj" />
+    <Project Path="src/NotificationService/MyRes.NotificationService.Application/MyRes.NotificationService.Application.csproj" Id="cbd6928d-b706-4751-b8eb-fd5baaff1eb6" />
+    <Project Path="src/NotificationService/MyRes.NotificationService.Domain/MyRes.NotificationService.Domain.csproj" Id="6cdc0760-4dff-4471-a1da-854b6d56ac19" />
+    <Project Path="src/NotificationService/MyRes.NotificationService.Infrastructure/MyRes.NotificationService.Infrastructure.csproj" Id="0ac2a2c9-6126-42e5-8f45-c01e1d5e6377" />
+  </Folder>
+  <Folder Name="/src/PaymentsService/">
+    <Project Path="src/PaymentService/MyRes.PaymentService.Api/MyRes.PaymentService.Api.csproj" />
+    <Project Path="src/PaymentService/MyRes.PaymentService.Application/MyRes.PaymentService.Application.csproj" />
+    <Project Path="src/PaymentService/MyRes.PaymentService.Domain/MyRes.PaymentService.Domain.csproj" />
+    <Project Path="src/PaymentService/MyRes.PaymentService.Infrastructure/MyRes.PaymentService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/ProviderService/">
+    <Project Path="src/ProviderService/MyRes.ProviderService.Api/MyRes.ProviderService.Api.csproj" />
+    <Project Path="src/ProviderService/MyRes.ProviderService.Application/MyRes.ProviderService.Application.csproj" />
+    <Project Path="src/ProviderService/MyRes.ProviderService.Domain/MyRes.ProviderService.Domain.csproj" />
+    <Project Path="src/ProviderService/MyRes.ProviderService.Infrastructure/MyRes.ProviderService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/TripService/">
+    <Project Path="src/TripService/MyRes.TripService.Api/MyRes.TripService.Api.csproj" />
+    <Project Path="src/TripService/MyRes.TripService.Application/MyRes.TripService.Application.csproj" />
+    <Project Path="src/TripService/MyRes.TripService.Domain/MyRes.TripService.Domain.csproj" />
+    <Project Path="src/TripService/MyRes.TripService.Infrastructure/MyRes.TripService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Architecture/">
+    <Project Path="tests/Architecture/MyRes.ArchitectureTests/MyRes.ArchitectureTests.csproj" Id="381ccf6b-0450-460b-9941-0d48ba4a3c5b" />
+  </Folder>
+  <Folder Name="/tests/BuildingBlocks/">
+    <Project Path="tests/BuildingBlocks/MyRes.BuildingBlocks.Testing/MyRes.BuildingBlocks.Testing.csproj" Id="add00f46-5399-4c30-9bdc-f86697686e59" />
+  </Folder>
+  <Folder Name="/tests/TripService/" />
+  <Folder Name="/tests/TripService/Api/">
+    <Project Path="tests/TripService/Api/MyRes.TripService.Api.IntegrationTests/MyRes.TripService.Api.IntegrationTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/TripService/Application/">
+    <Project Path="tests/TripService/Application/MyRes.TripService.Application.UnitTests/MyRes.TripService.Application.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/TripService/Architecture/">
+    <Project Path="tests/TripService/Architecture/MyRes.TripService.ArchitectureTests/MyRes.TripService.ArchitectureTests.csproj" Id="40bf14c2-31d1-4580-b182-1791a1bd16dd" />
+  </Folder>
+  <Folder Name="/tests/TripService/Domain/">
+    <Project Path="tests/TripService/Domain/MyRes.TripService.Domain.UnitTests/MyRes.TripService.Domain.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/TripService/Infrastructure/">
+    <Project Path="tests/TripService/Infrastructure/MyRes.TripService.Infrastructure.ContractTests/MyRes.TripService.Infrastructure.ContractTests.csproj" />
+    <Project Path="tests/TripService/Infrastructure/MyRes.TripService.Infrastructure.UnitTests/MyRes.TripService.Infrastructure.UnitTests/MyRes.TripService.Infrastructure.UnitTests.csproj" Id="fb114fe1-766b-452b-a700-9ef348b021b7" />
+  </Folder>
+  <Folder Name="/tests/TripService/Playground/">
+    <Project Path="tests/TripService/Playground/MyRes.TripService.PlaygroundTests/MyRes.TripService.PlaygroundTests.csproj" Id="56be5321-a230-42e6-82e6-db15bbd70819" />
+  </Folder>
+  <Project Path="MyRes.AppHost/MyRes.AppHost.csproj" Id="de78c74f-1430-4f6e-8b56-1bc560c43b8b" />
+</Solution>

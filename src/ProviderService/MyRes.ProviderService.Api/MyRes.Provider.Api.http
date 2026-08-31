@@ -1,0 +1,6 @@
+@MyRes.Provider.API_HostAddress = http://localhost:5149
+
+GET {{MyRes.Provider.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,1 @@
+﻿Collect reusable mock setups when the same configuration is repeated across multiple tests.

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.1.0" />
+	<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyRes.TripService.Domain\MyRes.TripService.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Trips\Commands\Shared\DTOs\" />
+    <Folder Include="Trips\Queries\FlightReservations\Flights\GetFlightDetailById\" />
+    <Folder Include="Trips\Queries\FlightReservations\Flights\Segments\GetFlightSegmentDetailById\" />
+    <Folder Include="Trips\Queries\HotelReservations\GetHotelReservationById\" />
+    <Folder Include="Trips\Queries\HotelReservations\Hotels\GetHotelDetailById\" />
+    <Folder Include="Trips\Queries\HotelReservations\Mappings\" />
+  </ItemGroup>
+
+</Project>
