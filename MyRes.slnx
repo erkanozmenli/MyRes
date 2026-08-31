@@ -1,7 +1,7 @@
 <Solution>
   <Folder Name="/docs/">
+    <File Path="docs/commands.md" />
     <File Path="docs/README.md" />
-    <File Path="docs/README.txt" />
   </Folder>
   <Folder Name="/docs/adr/">
     <File Path="docs/adr/0001-architecture-principles.md" />
