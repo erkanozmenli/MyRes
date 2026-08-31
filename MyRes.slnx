@@ -48,6 +48,7 @@
     <Project Path="src/ProviderService/MyRes.ProviderService.Infrastructure/MyRes.ProviderService.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/src/TripService/">
+    <File Path="deploymenttest.txt" />
     <Project Path="src/TripService/MyRes.TripService.Api/MyRes.TripService.Api.csproj" />
     <Project Path="src/TripService/MyRes.TripService.Application/MyRes.TripService.Application.csproj" />
     <Project Path="src/TripService/MyRes.TripService.Domain/MyRes.TripService.Domain.csproj" />
